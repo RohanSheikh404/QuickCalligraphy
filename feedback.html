@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <!-- <link
+      href="https://n.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://n.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="feedback.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+    .main {
+     
+      height: 350px;
+  width: 100%;
+  background-image: url(images/aboutpic.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px grey;}
+
+    .contact {
+      text-shadow: 0 1px 1px black;
+      font-weight: 600;
+    }
+
+    P {
+      color: #f9f9f9;
+    }
+
+    /* main2 start */
+
+    .main2 {
+      height: 200px;
+      width: 100%;
+      bottom: 50px;
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .image2 {
+      border-radius: 10px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .datas {
+      height: 600px;
+      border-radius: 10px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .data {
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      margin-top: 15px;
+      box-shadow: 0px 5px 5px -5px black !important;
+      padding-left: 20px;
+    }
+
+    .data1 {
+      box-shadow: 10px 5px 10px -10px black;
+    }
+
+    .data2 {
+      margin-top: 20px;
+      height: 120px;
+    }
+
+    .button1 {
+      margin-top: 30px;
+      height: 40px;
+      width: 160px;
+      border-radius: 10px;
+      background-color: gray;
+      color: white;
+      border: none;
+      font-weight: 550;
+      font-size: 16px;
+      transition: 0.5s;
+      box-shadow: 0px 5px 5px -5px black;
+    }
+
+    .button1:hover {
+      width: 170px;
+    }
+  </style>
+
+<body>
+  <div class="top sticky-top">
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="stylecategories.html">Calligraphy Styles</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active" href="designcategories.html">Design Categories</a> 
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="feedback.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="line sticky-bottom"></div>
+  </div>
+  <div class="main text-center p-5 fs-5">
+
+        <h1 class="display-1 contact text-white">
+          Feedback
+        </h1>
+        <p class="text-white mt-5">Thanks for your recent visit to our store. We want to provide the best experience possible! To help us, please take a moment to leave your feedback.</p>
+      </div>
+
+    <!-- Form Start -->
+
+    <form action="">
+      <div class="container main3 mt-5">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 datas">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <input
+                    type="email"
+                    class="data data1"
+                    id="box3"
+                    placeholder="Enter Email"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <textarea
+                    name=""
+                    cols="30"
+                    rows="10"
+                    class="data data2"
+                    id="box5"
+                    placeholder="Give your feedback"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="feedbackbox">
+                    <div class="emoji">
+                      <div id="emoji">
+                        <img
+                          src="images/emoji1.png"
+                          alt=""
+                          height=""
+                          id="image1"
+                        />
+                        <img src="images/emoji2.png" alt="" id="image2" />
+                        <img src="images/emoji3.webp" alt="" id="image3" />
+                        <img src="images/emoji4.png" alt="" id="image4" />
+                        <img src="images/emoji5.png" alt="" id="image5" />
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <i
+                        class="fas fa-star"
+                        id="star1"
+                        onclick="feedback1()"
+                      ></i>
+                      <i
+                        class="fas fa-star"
+                        id="star2"
+                        onclick="feedback2()"
+                      ></i>
+                      <i
+                        class="fas fa-star"
+                        id="star3"
+                        onclick="feedback3()"
+                      ></i>
+                      <i
+                        class="fas fa-star"
+                        id="star4"
+                        onclick="feedback4()"
+                      ></i>
+                      <i
+                        class="fas fa-star"
+                        id="star5"
+                        onclick="feedback5()"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-lg-12 mt-2">
+                  <button
+                    type="submit"
+                    class="button1 data6"
+                    id="submit"
+                    onclick="submit()"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 col-md-12 col-sm-12">
+            <img
+              src="feed.png" id="img1" height="600px" width="100%" class="image2" alt="" />
+          </div> -->
+        </div>
+      </div>
+    </form>
+    <!-- Form End -->
+   <!-- Footer -->
+<footer class="text-center text-lg-start text-light mt-4">
+
+  <!-- Section: Social media start-->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span class="m-5 p-4 fw-bold footerhd"></span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="footericons">
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href=""
+        class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <!-- Right -->
+
+  </section>
+  <!-- Section: Social media end-->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="images/logo.png" alt="" height="65px" width="100%" class="footerlogo">
+          </h6>
+          <p>
+            Journey with us to discover the most amazing places in the world. Learn about world and national wonders
+            and create your own ultimate bucket list
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase fw-bold mb-4 hr">
+            <span class="footerhd">Calligraphy Styles</span>
+          </h5>
+          <p>
+            <a href="stylecategories.html" class="text-reset footerhover  ">Arabic Calligraphy</a>
+          </p>
+          <p>
+            <a href="stylecategories.html" class="text-reset">Western Calligraphy</a>
+          </p>
+          <p>
+            <a href="stylecategories.html" class="text-reset">Chinese Calligraphy</a>
+          </p>
+          <p>
+            <a href="stylecategories.html" class="text-reset"></a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase fw-bold mb-4">
+            <span class="footerhd">Calligraphy Categories</span>
+          </h5>
+          <p>
+            <a href="designcategories.html" class="text-reset">Easy for Kids</a>
+          </p>
+          <p>
+            <a href="designcategories.html" class="text-reset">Complex for elders</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase fw-bold mb-4"><span class="footerhd">More</span></h5>
+          <p><a href="about.html" class="text-reset">About Us</a></p>
+          <p><a href="ContactUs.html" class="text-reset">Contact Us</a></p>
+          <p><a href="gallery.html" class="text-reset">Gallery</a></p>
+          <p><a href="feedback.html" class="text-reset">Feedback</a></p>
+        </div>
+
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- our link-->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Visit Website:
+    <a class="text-reset fw-bold" href="index.html">CALLIGRAPHY</a>
+  </div>
+  <!-- our link -->
+</footer>
+<!-- Footer -->
+</div>
+
+    <script>
+      function feedback1() {
+        document.getElementById("star5").style.color = "";
+        document.getElementById("star4").style.color = "";
+        document.getElementById("star3").style.color = "";
+        document.getElementById("star2").style.color = "";
+        document.getElementById("star1").style.color = "yellow";
+        document.getElementById("image5").style.opacity = "0";
+        document.getElementById("image4").style.opacity = "0";
+        document.getElementById("image3").style.opacity = "0";
+        document.getElementById("image2").style.opacity = "0";
+        document.getElementById("image1").style.transition = "all 0.3s";
+        document.getElementById("image1").style.transform = "translateX(400px)";
+        document.getElementById("image1").style.opacity = "1";
+      }
+      function feedback2() {
+        document.getElementById("star5").style.color = "";
+        document.getElementById("star4").style.color = "";
+        document.getElementById("star3").style.color = "";
+        document.getElementById("star2").style.color = "yellow";
+        document.getElementById("star1").style.color = "yellow";
+        document.getElementById("image5").style.opacity = "0";
+        document.getElementById("image4").style.opacity = "0";
+        document.getElementById("image3").style.opacity = "0";
+        document.getElementById("image2").style.transition = "all 0.3s";
+        document.getElementById("image2").style.transform = "translateX(300px)";
+        document.getElementById("image2").style.opacity = "1";
+        document.getElementById("image1").style.transform = "translateX(800px)";
+        document.getElementById("image1").style.opacity = "0";
+      }
+      function feedback3() {
+        document.getElementById("star5").style.color = "";
+        document.getElementById("star4").style.color = "";
+        document.getElementById("star3").style.color = "yellow";
+        document.getElementById("star2").style.color = "yellow";
+        document.getElementById("star1").style.color = "yellow";
+        document.getElementById("image5").style.opacity = "0";
+        document.getElementById("image4").style.opacity = "0";
+        document.getElementById("image3").style.transition = "all 0.3s";
+        document.getElementById("image3").style.transform = "translateX(200px)";
+        document.getElementById("image3").style.opacity = "1";
+        document.getElementById("image2").style.transform = "translateX(800px)";
+        document.getElementById("image2").style.opacity = "0";
+        document.getElementById("image1").style.opacity = "0";
+      }
+      function feedback4() {
+        document.getElementById("star5").style.color = "";
+        document.getElementById("star4").style.color = "yellow";
+        document.getElementById("star3").style.color = "yellow";
+        document.getElementById("star2").style.color = "yellow";
+        document.getElementById("star1").style.color = "yellow";
+        document.getElementById("image5").style.opacity = "0";
+        document.getElementById("image4").style.transition = "all 0.3s";
+        document.getElementById("image4").style.transform = "translateX(100px)";
+        document.getElementById("image4").style.opacity = "1";
+        document.getElementById("image3").style.transform = "translateX(800px)";
+        document.getElementById("image3").style.opacity = "0";
+        document.getElementById("image2").style.opacity = "0";
+        document.getElementById("image1").style.opacity = "0";
+      }
+      function feedback5() {
+        document.getElementById("star5").style.color = "yellow";
+        document.getElementById("star4").style.color = "yellow";
+        document.getElementById("star3").style.color = "yellow";
+        document.getElementById("star2").style.color = "yellow";
+        document.getElementById("star1").style.color = "yellow";
+        document.getElementById("image5").style.transition = "all 0.3s";
+        document.getElementById("image5").style.opacity = "1";
+        document.getElementById("image4").style.transform = "translateX(400px)";
+        document.getElementById("image4").style.opacity = "0";
+        document.getElementById("image3").style.opacity = "0";
+        document.getElementById("image2").style.opacity = "0";
+        document.getElementById("image1").style.opacity = "0";
+      }
+    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </script>
+    <!-- <script
+      src="https://n.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46fL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://n.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <script
+      src="https://njs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://njs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://njs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://n.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
